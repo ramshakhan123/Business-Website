@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    background-image: url('bg2.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+}
+
+.top-nav-logo-area   {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .top-nav-logo-area h1 {
+    margin-left: 10px;
+    color: red;
+}
+
+header .top-nav-logo-area h1::after {
+    background-color: #4682b49c;
+    content: 'Websites';
+    color: white;
+    border: 1px solid transparent;
+    padding: 5px 30px;
+    font-size: 20px;
+    margin-left: 3px;
+    border-radius: 10px 0px;
+}
+
+
+
+nav {
+    width: 50%;
+    margin-top: 17px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+
+nav ul li {
+    font-size: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.header-description {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.header-description h2 {
+    font-size: 30px;
+    color: wheat;
+}
+
+.header-description p {
+    width: 40%;
+    margin: auto;
+    line-height: 20px;
+    color: white;
+    
+}
+
+.header-description hr {
+    width: 30%;
+    height: 2px;
+    background-color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.header-description button {
+    padding: 20px 50px;
+    border-radius: 10px;
+    background: linear-gradient(to right, blue, lightblue) ;
+    border: none;
+    font-size: 20px;
+    color: white;
+    outline: none;
+}
+
+
+
+
+.header-description button:hover{
+     background: #0000007d;
+}
+
+
+
+.header-bg-color {
+    background-color: #000000a6;
+    height: 100vh;
+
+}
+
+
+
+.aboutus {
+    text-align: center;
+    height: 80vh;
+    
+}
+
+
+.aboutus h1, .ourservices-area h1, .contact h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.aboutus-description {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.aboutus-left-sec {
+    width: 50%;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+.aboutus img {
+    margin-right: 10px;
+}
+
+
+.aboutus hr, .ourservices-area hr, .contact hr {
+    width: 10%;
+    height: 2px;
+    background-color: red;
+    border: none;
+}
+
+
+.aboutus h3 {
+    font-style: italic;
+}
+
+
+.ourservices-area {
+    background-image: url('ourser.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 800px;
+    color: white;
+    clip-path: polygon(0% 20%, 127% 0%, 100% 100%, 0% 100%);
+}
+
+.ourservices-flex {
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.ourservices-area img {
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+}
+
+.ourservices-area p {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+.ourservices {
+    height: 800px;
+    padding-top: 90px;
+    background-color: #000000de;
+}
+
+
+.ceo,.partner, .head {
+    border:  1px solid;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+.ceo {
+    border-right: none;
+}
+
+.ceo, .head {
+    border-left: none;
+}
+
+
+.head {
+    border-right: none;
+    
+}
+
+
+
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact p {
+    text-decoration:underline ;
+    margin-top: 0;
+}
+
+
+.contact-left-sec {
+    width: 50%;
+    border: 1px solid;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right-style: dashed;
+    margin-left: 5%;
+    
+}
+
+.contact-left-sec h5 {
+    color: red;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+
+.contact-left-sec h5:nth-child(1) {
+    margin-top: 0;
+}
+
+
+.contact-right-sec h5 {
+    margin-bottom: 0;
+}
+
+.contact-right-sec {
+    width: 50%;
+    margin-left: 40px;
+} 
+
+footer {
+    background: linear-gradient(to right, blue, lightblue);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+footer h2 {
+    font-size: medium;
+    margin-bottom: 0;
+}
+
+
+
+
+
+@media(max-width:700px) {
+    header {
+        height: 110vh;
+    }
+    .aboutus {
+        height: auto;
+    }
+    header, section,footer {
+        width: 801px;
+    }
+    nav {
+        width: auto;
+
+    }
+    nav ul {
+        display: block;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+   @media(min-width:1500px) {
+      
+       header,.aboutus {
+           height: 42vh;
+       }
+
+   }
+
+
+
+
+
